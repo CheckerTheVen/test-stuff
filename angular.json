@@ -13,7 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "crossOrigin": "none",
+            "outputPath": {
+              "base": "docs",
+              "browser": ""
+            },
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -51,9 +55,13 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "documentation": {
+              "optimization": false,
+              "extractLicenses": false
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "documentation"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
