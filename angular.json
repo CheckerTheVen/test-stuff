@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "crossOrigin": "none",
             "outputPath": {
               "base": "docs",
               "browser": ""
@@ -58,7 +57,8 @@
             },
             "documentation": {
               "optimization": false,
-              "extractLicenses": false
+              "extractLicenses": false,
+              "baseHref": "/test-stuff"
             }
           },
           "defaultConfiguration": "documentation"
