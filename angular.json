@@ -58,7 +58,7 @@
             "documentation": {
               "optimization": false,
               "extractLicenses": false,
-              "baseHref": "/test-stuff"
+              "baseHref": "/test-stuff/"
             }
           },
           "defaultConfiguration": "documentation"
